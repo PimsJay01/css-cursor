@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Test CSS-Cursor</title>
+    <link rel="stylesheet" media="all" href="../dist/css-cursor.css">
+  </head>
+<body>
+  <table>
+   <tbody>
+    <tr>
+     <th>Catégorie</th>
+     <th>Valeur CSS</th>
+     <th> </th>
+     <th>Description</th>
+    </tr>
+    <tr class="cr-auto">
+     <td rowspan="3">Général</td>
+     <td><code>auto</code></td>
+     <td> </td>
+     <td>Le navigateur détermine le curseur à afficher selon le contexte courant.<br>
+      Ex. : vaut <code>text</code> lors du survol d'un texte.</td>
+    </tr>
+    <tr class="cr-default">
+     <td><code>default</code></td>
+     <td><img alt="default.gif" src="/@api/deki/files/3438/=default.gif" style="width: 26px; height: 26px;"></td>
+     <td>Curseur par défaut, habituellement une flèche.</td>
+    </tr>
+    <tr class="cr-none">
+     <td><code>none</code></td>
+     <td> </td>
+     <td>Aucun curseur affiché.</td>
+    </tr>
+    <tr class="cr-context-menu">
+     <td rowspan="5" class="cr-auto">Liens &amp; statut</td>
+     <td><code>context-menu</code></td>
+     <td><img alt="context-menu.png" src="/@api/deki/files/3461/=context-menu.png" style="width: 26px; height: 26px;"></td>
+     <td>Un menu contextuel est disponible sous le curseur.<br>
+      Seulement disponible sur IE 10 et supérieur sur Windows : <a class="external" href="https://bugzilla.mozilla.org/show_bug.cgi?id=258960" title="'context-menu' cursor glyph missing for Windows">bug 258960</a>.</td>
+    </tr>
+    <tr class="cr-help">
+     <td><code>help</code></td>
+     <td><img alt="help.gif" src="/@api/deki/files/3442/=help.gif" style="width: 26px; height: 26px;"></td>
+     <td>Indique qu'une aide est disponible.</td>
+    </tr>
+    <tr class="cr-pointer">
+     <td><code>pointer</code></td>
+     <td><img alt="pointer.gif" src="/@api/deki/files/3449/=pointer.gif" style="width: 26px; height: 26px;"></td>
+     <td>Ex. : est utilisé lors du survol des liens, habituellement une main.</td>
+    </tr>
+    <tr class="cr-progress">
+     <td><code>progress</code></td>
+     <td><img alt="progress.gif" src="/@api/deki/files/3450/=progress.gif" style="width: 26px; height: 26px;"></td>
+     <td>Le programme est occupé en fond mais l'utilisateur peut toujours intéragir avec l'interface (contrairement à <code>wait</code>).</td>
+    </tr>
+    <tr class="cr-wait">
+     <td><code>wait</code></td>
+     <td><img alt="wait.gif" src="/@api/deki/files/3457/=wait.gif" style="width: 26px; height: 26px;"></td>
+     <td>Le programme est occupé (parfois un sablier ou une montre).</td>
+    </tr>
+    <tr class="cr-cell">
+     <td rowspan="4" class="cr-auto">Sélection</td>
+     <td><code>cell</code></td>
+     <td><img alt="cell.gif" src="/@api/deki/files/3434/=cell.gif" style="width: 26px; height: 26px;"></td>
+     <td>Indique que des cellules peuvent être sélectionnées.</td>
+    </tr>
+    <tr class="cr-crosshair">
+     <td><code>crosshair</code></td>
+     <td><img alt="crosshair.gif" src="/@api/deki/files/3437/=crosshair.gif" style="width: 26px; height: 26px;"></td>
+     <td>Curseur en forme de croix, indique souvent une sélection de pixel sur une image.</td>
+    </tr>
+    <tr class="cr-text">
+     <td><code>text</code></td>
+     <td><img alt="text.gif" class="default" src="/files/3809/text.gif" style="width: 26px; height: 26px;"></td>
+     <td>Indique que du texte peut être sélectionné.</td>
+    </tr>
+    <tr class="cr-vertical-text">
+     <td><code>vertical-text</code></td>
+     <td><img alt="vertical-text.gif" src="/@api/deki/files/3456/=vertical-text.gif" style="width: 26px; height: 26px;"></td>
+     <td>Indique que du texte vertical peut être sélectionné.</td>
+    </tr>
+    <tr class="cr-alias">
+     <td rowspan="5" class="cr-auto">Drag and drop</td>
+     <td><code>alias</code></td>
+     <td><img alt="alias.gif" src="/@api/deki/files/3432/=alias.gif" style="width: 26px; height: 26px;"></td>
+     <td>Indique qu'un alias ou un raccourci peut être créé.</td>
+    </tr>
+    <tr class="cr-copy">
+     <td><code>copy</code></td>
+     <td><img alt="copy.gif" class="default" src="/@api/deki/files/3436/=copy.gif" style="width: 26px; height: 26px;"></td>
+     <td>Indique que quelque chose peut être copié.</td>
+    </tr>
+    <tr class="cr-move">
+     <td><code>move</code></td>
+     <td><img alt="move.gif" src="/@api/deki/files/3443/=move.gif" style="width: 26px; height: 26px;"></td>
+     <td>L'objet survolé peut être déplacé.</td>
+    </tr>
+    <tr class="cr-no-drop">
+     <td><code>no-drop</code></td>
+     <td><img align="left" alt="no-drop.gif" class="lwrap" src="/@api/deki/files/3445/=no-drop.gif" style="width: 33px; height: 26px;"></td>
+     <td>Curseur indiquant qu'il n'est pas possible de déposer quelque chose à cet endroit.<br>
+      <a class="external" href="https://bugzilla.mozilla.org/show_bug.cgi?id=275173" title="Cursor glyph for CSS3 'no-drop' is the same as for 'not-allowed'">bug 275173</a> sur Windows, "<em>no-drop</em> est identique à <em>not-allowed</em>".</td>
+    </tr>
+    <tr class="cr-not-allowed">
+     <td><code>not-allowed</code></td>
+     <td><img alt="not-allowed.gif" src="/@api/deki/files/3446/=not-allowed.gif" style="width: 26px; height: 26px;"></td>
+     <td>Curseur indiquant que quelque chose ne peut pas être fait.</td>
+    </tr>
+    <tr class="cr-all-scroll">
+     <td rowspan="15" class="cr-auto">Redimensionnement &amp; défilement</td>
+     <td><code>all-scroll</code></td>
+     <td><img alt="all-scroll.gif" src="/@api/deki/files/3433/=all-scroll.gif" style="width: 26px; height: 26px;"></td>
+     <td>Cursor indiquant qu'il est possible de faire défiler dans n'importe quelle direction.<br>
+      <a class="external" href="https://bugzilla.mozilla.org/show_bug.cgi?id=275174" title="Cursor glyph for CSS3 'all-scroll' is the same as for 'move'">bug 275174</a> sur Windows, "<em>all-scroll</em> est identique à <em>move</em>".</td>
+    </tr>
+    <tr class="cr-col-resize">
+     <td><code>col-resize</code></td>
+     <td><img alt="col-resize.gif" src="/@api/deki/files/3435/=col-resize.gif" style="width: 26px; height: 26px;"></td>
+     <td>L'élément peut être redimensionné horizontalement. Souvent représenté par des flèches pointant à gauche et à droite séparées par une barre verticale.</td>
+    </tr>
+    <tr class="cr-row-resize">
+     <td><code>row-resize</code></td>
+     <td><img alt="row-resize.gif" src="/@api/deki/files/3451/=row-resize.gif" style="width: 26px; height: 26px;"></td>
+     <td>L'élément peut être redimensionné verticalement. Souvent représenté par des flèches pointant en haut et en bas séparées par une barre horizontale.</td>
+    </tr>
+    <tr class="cr-n-resize">
+     <td><code>n-resize</code></td>
+     <td><img alt="Example of a resize towards the top cursor" src="/files/4083/n-resize.gif" style="width: 26px; height: 26px; border-width: 0px; border-style: solid;"></td>
+     <td rowspan="8" class="cr-auto">Un côté peut être déplacé. Par exemple, le curseur <code>se-resize</code> est utilisé quand le mouvement commence dans le coin en bas à droite de la boîte.</td>
+    </tr>
+    <tr class="cr-e-resize">
+     <td><code>e-resize</code></td>
+     <td><img alt="Example of a resize towards the right cursor" src="/files/4085/e-resize.gif" style="width: 26px; height: 26px;"></td>
+    </tr>
+    <tr class="cr-s-resize">
+     <td><code>s-resize</code></td>
+     <td><img alt="Example of a resize towards the bottom cursor " src="/files/4087/s-resize.gif" style="width: 26px; height: 26px;"></td>
+    </tr>
+    <tr class="cr-w-resize">
+     <td><code>w-resize</code></td>
+     <td><img alt="Example of a resize towards the left cursor" src="/files/4089/w-resize.gif" style="width: 26px; height: 26px;"></td>
+    </tr>
+    <tr class="cr-ne-resize">
+     <td><code>ne-resize</code></td>
+     <td><img alt="Example of a resize towards the top-right corner cursor" src="/files/4091/ne-resize.gif" style="width: 26px; height: 26px;"></td>
+    </tr>
+    <tr class="cr-nw-resize">
+     <td><code>nw-resize</code></td>
+     <td><img alt="Example of a resize towards the top-left corner cursor" src="/files/4093/nw-resize.gif" style="width: 26px; height: 26px;"></td>
+    </tr>
+    <tr class="cr-se-resize">
+     <td><code>se-resize</code></td>
+     <td><img alt="Example of a resize towards the bottom-right corner cursor" src="/files/4097/se-resize.gif" style="width: 26px; height: 26px;"></td>
+    </tr>
+    <tr class="cr-sw-resize">
+     <td><code>sw-resize</code></td>
+     <td><img alt="Example of a resize towards the bottom-left corner cursor" src="/files/4095/sw-resize.gif" style="width: 26px; height: 26px;"></td>
+    </tr>
+    <tr class="cr-ew-resize">
+     <td><code>ew-resize</code></td>
+     <td><img alt="3-resize.gif" class="default" src="/files/3806/3-resize.gif" style="width: 26px; height: 26px;"></td>
+     <td rowspan="4" class="cr-auto">Indique un redimensionnement bidirectionnel.</td>
+    </tr>
+    <tr class="cr-ns-resize">
+     <td><code>ns-resize</code></td>
+     <td><img alt="6-resize.gif" class="default" src="/files/3808/6-resize.gif" style="width: 26px; height: 26px;"></td>
+    </tr>
+    <tr class="cr-nesw-resize">
+     <td><code>nesw-resize</code></td>
+     <td><img alt="1-resize.gif" class="default" src="/files/3805/1-resize.gif"></td>
+    </tr>
+    <tr class="cr-nwse-resize">
+     <td><code>nwse-resize</code></td>
+     <td><img alt="4-resize.gif" class="default" src="/files/3807/4-resize.gif" style="width: 26px; height: 26px;"></td>
+    </tr>
+    <tr class="cr-zoom-in">
+     <td rowspan="2">Zoom</td>
+     <td><code>zoom-in</code></td>
+     <td><img alt="zoom-in.gif" class="default" src="/@api/deki/files/3459/=zoom-in.gif"></td>
+     <td rowspan="2" class="cr-auto">Indique que quelque chose peut être zoomé ou dézoomé.</td>
+    </tr>
+    <tr class="cr-zoom-out">
+     <td><code>zoom-out</code></td>
+     <td><img alt="zoom-out.gif" class="default" src="/@api/deki/files/3460/=zoom-out.gif"></td>
+    </tr>
+    <tr class="cr-grab">
+     <td rowspan="2">Saisie</td>
+     <td><code>grab</code></td>
+     <td><img alt="grab.gif" class="default" src="/@api/deki/files/3440/=grab.gif"></td>
+     <td rowspan="2" class="cr-auto">Indique que quelque chose peut être saisi (pour être déplacé par cliquer-glisser).</td>
+    </tr>
+    <tr class="cr-grabbing">
+     <td><code>grabbing</code></td>
+     <td><img alt="grabbing.gif" class="default" src="/@api/deki/files/3441/=grabbing.gif"></td>
+    </tr>
+   </tbody>
+  </table>
+</body>
+</html>
